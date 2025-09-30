@@ -1,0 +1,28 @@
+DECLARE Num: INTEGER
+DECLARE Index: INTEGER
+DECLARE OutputString: STRING
+DECLARE Index 1: INTEGER
+
+OUTPUT "Welcome to ASCII Art Grid. Please enter an integer value."
+INPUT Num
+
+FOR Index <--- 1 TO Num
+  IF Index = 1 OR Index = Num
+    THEN OutputString <--- " "
+           FOR Index1 <--- 1 TO Num
+                 OutputString <--- OutputString & Num & " " 
+           NEXT Index
+           OUTPUT OutputString
+  ELSE 
+    OutputString <--- " " & Num & " "
+    FOR Index1 <--- 1 TO (Num-2) 
+       OutputString <--- OutputString & '*' & " "
+    NEXT Index 
+    OutputString <--- OutputString & Num
+    OUTPUT OutputString 
+    OutputString <--- " " 
+  ENDIF
+NEXT Index
+
+
+
