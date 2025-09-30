@@ -15,4 +15,4 @@ It demonstrates loops, conditional logic, and string handling in pseudocode.
 6 * * * * 6
 6 6 6 6 6 6
 
-Made for fun and learning! 💻
+Made for fun learning! 💻
